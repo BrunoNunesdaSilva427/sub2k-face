@@ -1,0 +1,13 @@
+# Arquivos gerados: fora do diff normal e fora das estatísticas de linguagem do GitHub
+firmware/identities.h.example linguist-generated=true
+firmware/identities.h.example -diff
+
+# Normaliza fim de linha (evita CRLF vs LF entre quem usa Arduino IDE no Windows
+# e quem edita em Linux/Mac — problema clássico em projetos com firmware .ino)
+*.ino text eol=lf
+*.h   text eol=lf
+*.py  text eol=lf
+
+# Binários que não devem passar por diff/merge de texto
+*.npz binary
+*.hex binary

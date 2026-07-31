@@ -1,0 +1,28 @@
+# --- Dados de identidade (biométricos) — NUNCA commitar ---
+# Gerados localmente via enroll.py + tools/generate_identities_header.py.
+# O template público fica em firmware/identities.h.example (esse sim é versionado).
+firmware/identities.h
+identities.json
+
+# --- Modelo PCA treinado ---
+# Específico do dataset de treino de cada um; grande e não faz sentido versionar.
+model.npz
+
+# --- Build do arduino-cli ---
+firmware/build/
+*.hex
+*.elf
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+*.egg-info/
+
+# --- OpenCV / captura (se sobrar algum frame de debug salvo em disco) ---
+*.jpg
+*.png
+!fotos_treino/**
